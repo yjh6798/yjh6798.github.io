@@ -10,8 +10,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <div style="font-family: inherit; font-size:0.92rem; line-height:1.4; text-align:left; margin-top:0.9rem;">
-      <strong>Postdoctoral Researcher</strong><br>
+    <div style="font-family: inherit; font-size: 0.95rem; line-height: 1.45; letter-spacing: 0; word-spacing: normal; text-align: left; margin-top: 0.8rem; color: inherit;">
+      <strong style="font-weight: 600;">Postdoctoral Researcher</strong><br>
       <a href="https://mede.caltech.edu/" target="_blank">Department of Medical Engineering</a><br>
       California Institute of Technology<br>
       Pasadena, California, USA
@@ -33,27 +33,31 @@ latest_posts:
 
 <style>
 /* About paragraph */
-.post p{
+.post p {
   text-align: justify;
-  line-height: 1.8;
+  line-height: 1.7;
 }
 
 /* Right profile text */
-.profile .more-info{
-  font-size:0.92rem;
-  line-height:1.4;
-  margin-top:0.8rem;
+.profile .more-info,
+.profile .more-info div {
+  font-family: inherit !important;
+  font-size: 0.95rem !important;
+  line-height: 1.45 !important;
+  letter-spacing: 0 !important;
+  word-spacing: normal !important;
+  text-align: left !important;
 }
 
 /* Social icons */
 .social i,
 .social svg,
-.social .ai{
-  font-size:1.45rem !important;
+.social .ai {
+  font-size: 1.45rem !important;
 }
 
-.social a{
-  margin:0 .18rem !important;
+.social a {
+  margin: 0 .18rem !important;
 }
 </style>
 
