@@ -10,11 +10,12 @@ profile:
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p><strong>Postdoctoral Researcher</strong></p>
-    <p>Department of Medical Engineering</p>
-    <p>California Institute of Technology</p>
-    <br>
-    <p>Pasadena, California, USA</p>
+  <div style="font-family: inherit; font-size: 0.95rem; line-height: 1.45; text-align: left;">
+    <p style="margin-bottom: 0.25rem;"><strong>Postdoctoral Researcher</strong></p>
+    <p style="margin-bottom: 0.25rem;">Department of Medical Engineering</p>
+    <p style="margin-bottom: 0.25rem;">California Institute of Technology</p>
+    <p style="margin-bottom: 0;">Pasadena, California, USA</p>
+  </div>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
