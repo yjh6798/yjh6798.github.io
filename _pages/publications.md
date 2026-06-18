@@ -6,13 +6,13 @@ nav: true
 nav_order: 4
 ---
 
-<!-- _pages/publications.md -->
-
 <!-- Bibsearch Feature -->
-
 {% include bib_search.liquid %}
 
-<p><strong>†</strong> Equal contribution &nbsp;&nbsp; <strong>*</strong> Corresponding author</p>
+<div style="margin-top: 0.8rem; margin-bottom: 1.2rem; font-size: 0.92rem; color: #555;">
+<strong>†</strong> Equal contribution &nbsp;&nbsp;&nbsp;
+<strong>*</strong> Corresponding author
+</div>
 
 <div class="publications">
 
