@@ -9,13 +9,13 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false
-  more_info: >
-    <div style="font-family: inherit; font-size: 0.95rem; line-height: 1.55; text-align: left; margin-top: 0.8rem;">
-      <p style="margin: 0 0 0.25rem 0;"><strong>Postdoctoral Researcher</strong></p>
-      <p style="margin: 0 0 0.25rem 0;">Department of Medical Engineering</p>
-      <p style="margin: 0 0 0.25rem 0;">California Institute of Technology</p>
-      <p style="margin: 0;">Pasadena, California, USA</p>
-    </div>
+more_info: >
+  <div style="font-family: inherit; font-size: 0.92rem; line-height: 1.35; text-align: left;">
+    <strong>Postdoctoral Researcher</strong><br>
+    Department of Medical Engineering<br>
+    California Institute of Technology<br>
+    Pasadena, California, USA
+  </div>
 
 selected_papers: false
 social: true
