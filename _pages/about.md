@@ -10,11 +10,13 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <div style="font-family: inherit; font-size: 0.95rem; line-height: 1.45; letter-spacing: 0; word-spacing: normal; text-align: left; margin-top: 0.8rem; color: inherit;">
-      <strong style="font-weight: 600;">Postdoctoral Researcher</strong><br>
-      <a href="https://mede.caltech.edu/" target="_blank">Department of Medical Engineering</a><br>
-      California Institute of Technology<br>
-      Pasadena, California, USA
+    <div class="profile-caption">
+      <div class="profile-title">Postdoctoral Researcher</div>
+      <div class="profile-dept">
+        <a href="https://mede.caltech.edu/" target="_blank">Department of Medical Engineering</a>
+      </div>
+      <div>California Institute of Technology</div>
+      <div>Pasadena, California, USA</div>
     </div>
 
 selected_papers: false
@@ -32,21 +34,48 @@ latest_posts:
 ---
 
 <style>
-/* About paragraph */
+/* Main about text */
 .post p {
   text-align: justify;
   line-height: 1.7;
 }
 
-/* Right profile text */
+/* Profile text under photo */
 .profile .more-info,
-.profile .more-info div {
-  font-family: inherit !important;
-  font-size: 0.95rem !important;
+.profile .more-info *,
+.profile .more-info p,
+.profile .more-info div,
+.profile .more-info a,
+.profile .more-info strong,
+.profile-caption,
+.profile-caption * {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 15px !important;
   line-height: 1.45 !important;
   letter-spacing: 0 !important;
   word-spacing: normal !important;
   text-align: left !important;
+  color: #222 !important;
+  font-weight: 400 !important;
+}
+
+.profile-caption {
+  margin-top: 0.9rem !important;
+}
+
+.profile-caption .profile-title {
+  font-weight: 500 !important;
+  margin-bottom: 0.15rem !important;
+}
+
+.profile-caption .profile-dept a {
+  color: #b0008e !important;
+  text-decoration: none !important;
+  font-weight: 400 !important;
+}
+
+.profile-caption .profile-dept a:hover {
+  text-decoration: underline !important;
 }
 
 /* Social icons */
