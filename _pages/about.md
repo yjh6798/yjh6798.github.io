@@ -12,9 +12,13 @@ profile:
   more_info: >
     <div class="profile-caption">
       <div class="profile-title">Postdoctoral Researcher</div>
+
       <div class="profile-dept">
-        <a href="https://mede.caltech.edu/" target="_blank">Department of Medical Engineering</a>
+        <a href="https://mede.caltech.edu/" target="_blank">
+          Department of Medical Engineering
+        </a>
       </div>
+
       <div>California Institute of Technology</div>
       <div>Pasadena, California, USA</div>
     </div>
@@ -34,60 +38,98 @@ latest_posts:
 ---
 
 <style>
-/* Main about text */
-.post p {
-  text-align: justify;
-  line-height: 1.7;
+
+/* ===========================
+   About paragraphs
+=========================== */
+
+.post p{
+    text-align:justify;
+    line-height:1.72;
 }
 
-/* Profile text under photo */
+/* ===========================
+   Profile caption
+=========================== */
+
 .profile .more-info,
 .profile .more-info *,
-.profile .more-info p,
-.profile .more-info div,
-.profile .more-info a,
-.profile .more-info strong,
 .profile-caption,
-.profile-caption * {
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-size: 15px !important;
-  line-height: 1.45 !important;
-  letter-spacing: 0 !important;
-  word-spacing: normal !important;
-  text-align: left !important;
-  color: #222 !important;
-  font-weight: 400 !important;
+.profile-caption *{
+
+    font-family:Arial, Helvetica, sans-serif !important;
+
+    font-size:16.5px !important;
+
+    line-height:1.55 !important;
+
+    letter-spacing:0 !important;
+
+    color:#222 !important;
+
+    text-align:left !important;
+
+    font-weight:400 !important;
 }
 
-.profile-caption {
-  margin-top: 0.9rem !important;
+.profile-caption{
+
+    margin-top:1.15rem !important;
+
 }
 
-.profile-caption .profile-title {
-  font-weight: 500 !important;
-  margin-bottom: 0.15rem !important;
+/* Title */
+
+.profile-caption .profile-title{
+
+    font-size:17px !important;
+
+    font-weight:600 !important;
+
+    margin-bottom:0.35rem !important;
+
 }
 
-.profile-caption .profile-dept a {
-  color: #b0008e !important;
-  text-decoration: none !important;
-  font-weight: 400 !important;
+/* Department */
+
+.profile-caption .profile-dept{
+
+    margin-bottom:0.05rem !important;
+
 }
 
-.profile-caption .profile-dept a:hover {
-  text-decoration: underline !important;
+.profile-caption .profile-dept a{
+
+    color:#b0008e !important;
+
+    text-decoration:none !important;
+
+    font-weight:500 !important;
+
+}
+
+.profile-caption .profile-dept a:hover{
+
+    text-decoration:underline !important;
+
 }
 
 /* Social icons */
+
 .social i,
 .social svg,
-.social .ai {
-  font-size: 1.45rem !important;
+.social .ai{
+
+    font-size:1.45rem !important;
+
 }
 
-.social a {
-  margin: 0 .18rem !important;
+.social a{
+
+    margin:0 .18rem !important;
+
 }
+
 </style>
 
 I am a postdoctoral researcher in the Department of Medical Engineering at the California Institute of Technology, in Prof. Wei Gao's laboratory. I received my Ph.D. in Chemical Engineering from POSTECH and previously held postdoctoral positions at the Korea Institute of Science and Technology (KIST) and the Ulsan National Institute of Science and Technology (UNIST).
