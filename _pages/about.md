@@ -134,21 +134,19 @@ latest_posts:
    Mobile only
 =========================== */
 
-@media (max-width: 768px) {
-
-  .profile{
-    margin-bottom:2.2rem !important;
-  }
+@media (max-width: 768px){
 
   .profile .more-info{
-    margin-bottom:1.2rem !important;
+
+    margin-bottom:1.5rem !important;
+
   }
 
 }
 
 </style>
 
-I am a postdoctoral researcher in the Department of Medical Engineering at the California Institute of Technology, in Prof. Wei Gao’s lab.
+I am a postdoctoral researcher in the Department of Medical Engineering at the California Institute of Technology, in Prof. Wei Gao's lab.
 
 My research focuses on translational nanorobotics and adaptive biofabrication for precision medicine. I engineer micro/nanorobotic and nanomaterial systems that actively interact with complex biological environments to enable targeted sensing, therapeutic delivery, and tissue modulation.
 
@@ -159,4 +157,3 @@ In parallel, I develop imaging- and AI-guided in vivo biofabrication platforms, 
 My long-term goal is to establish adaptive biomedical systems that integrate nanorobotics and intelligent biofabrication to enable targeted therapy, tissue repair, and regenerative medicine.
 
 Further details on my research and academic background are available in my [publications](/publications/) and [CV](/assets/pdf/Jounghyun_Yoo_CV.pdf).
-```
