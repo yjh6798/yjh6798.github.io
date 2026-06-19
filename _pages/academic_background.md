@@ -1,35 +1,22 @@
----
-layout: page
-title: Academic Background
-permalink: /academic-background/
-nav: true
-nav_order: 3
----
+## Academic Appointments
 
-# Academic Appointments
+**Postdoctoral Researcher**  
+Department of Medical Engineering, California Institute of Technology  
+Prof. Wei Gao’s Laboratory  
+Co-supervised by Prof. Jinmyoung Joo, UNIST  
+2021.09–Present
 
-### Postdoctoral Researcher
-**California Institute of Technology (Caltech)**  
-Department of Medical Engineering  
-2024 – Present
-
-### Visiting Scholar (Concurrent)
-**Ulsan National Institute of Science and Technology (UNIST)**  
-Department of Biomedical Engineering  
-2025 – Present
-
-### Postdoctoral Researcher
-**Korea Institute of Science and Technology (KIST)**  
-Center for Biomaterials  
-2023 – 2024
+**Postdoctoral Researcher**  
+Korea Institute of Science and Technology (KIST)  
+2019.09–2021.09
 
 
----
+## Education
 
-# Education
+**Ph.D., Chemical Engineering**  
+Pohang University of Science and Technology (POSTECH)  
+2019.09
 
-### Ph.D. in Chemical Engineering
-**Pohang University of Science and Technology (POSTECH)**
-
-### B.S. in Chemical Engineering
-**Pukyong National University**
+**B.S., Chemical Engineering**  
+Pohang University of Science and Technology (POSTECH)
+2014.02
