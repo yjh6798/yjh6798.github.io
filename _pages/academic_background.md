@@ -103,6 +103,7 @@ nav_order: 3
       <div class="academic-title">Ph.D., Chemical Engineering</div>
       <div class="academic-place">Pohang University of Science and Technology (POSTECH)</div>
       <div class="academic-note">Advisor: Prof. Shi-Woo Rhee</div>
+      <div class="academic-note">Co-advisor: Prof. Woosung Kwon, Sookmyung Women's University</div>
     </div>
   </div>
 
