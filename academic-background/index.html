@@ -6,39 +6,66 @@
     initTheme();
   </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Jounghyun</span> Yoo </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">Research </a> </li> <li class="nav-item active"> <a class="nav-link" href="/academic-background/">Academic Background <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Academic Background</h1> <p class="post-description"></p> </header> <article> <style>
 .academic-background {
-  max-width: 850px;
+  max-width: 900px;
 }
 
-.academic-background h2 {
+.academic-section {
+  margin-top: 2.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.academic-section h2 {
   color: #333 !important;
   font-weight: 600 !important;
+  font-size: 1.9rem !important;
   border-bottom: 1px solid #d8d8d8;
   padding-bottom: 0.35rem;
-  margin-top: 2rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.4rem;
 }
 
 .academic-item {
-  margin-bottom: 1.6rem;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  column-gap: 1.6rem;
+  margin-bottom: 1.7rem;
+}
+
+.academic-date {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding-top: 0.1rem;
 }
 
 .academic-title {
   font-weight: 600;
   font-size: 1.05rem;
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.18rem;
+  color: #111;
 }
 
-.academic-place,
-.academic-note,
-.academic-date {
+.academic-place {
+  line-height: 1.55;
+  color: #222;
+}
+
+.academic-note {
+  color: #555;
   line-height: 1.55;
 }
 
-.academic-note,
-.academic-date {
-  color: #555;
+@media (max-width: 768px) {
+  .academic-item {
+    grid-template-columns: 1fr;
+    row-gap: 0.2rem;
+  }
+
+  .academic-date {
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+  }
 }
-</style> <div class="academic-background"> ## Academic Appointments <div class="academic-item"> <div class="academic-title">Postdoctoral Researcher</div> <div class="academic-place">Department of Medical Engineering, California Institute of Technology</div> <div class="academic-note">Advisor: Prof. Wei Gao</div> <div class="academic-note">Co-advisor: Prof. Jinmyoung Joo, Ulsan National Institute of Science and Technology (UNIST)</div> <div class="academic-date">2021.09 – Present</div> </div> <div class="academic-item"> <div class="academic-title">Postdoctoral Researcher</div> <div class="academic-place">Center for Theragnosis, Biomedical Research Institute, Korea Institute of Science and Technology (KIST)</div> <div class="academic-note">Advisor: Dr. Sehoon Kim</div> <div class="academic-date">2019.09 – 2021.08</div> </div> ## Education <div class="academic-item"> <div class="academic-title">Ph.D., Chemical Engineering</div> <div class="academic-place">Pohang University of Science and Technology (POSTECH)</div> <div class="academic-note">Advisor: Prof. Shi-Woo Rhee</div> <div class="academic-date">2014.03 – 2019.08</div> </div> <div class="academic-item"> <div class="academic-title">B.S., Chemical Engineering</div> <div class="academic-place">Pohang University of Science and Technology (POSTECH)</div> <div class="academic-note">Magna cum laude</div> <div class="academic-date">2010.03 – 2014.02</div> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Jounghyun Yoo. </div> </footer> <script>
+</style> <div class="academic-background"> <div class="academic-section"> <h2>Academic Appointments</h2> <div class="academic-item"> <div class="academic-date">2021.09 – Present</div> <div> <div class="academic-title">Postdoctoral Researcher</div> <div class="academic-place">Department of Medical Engineering, California Institute of Technology</div> <div class="academic-note">Advisor: Prof. Wei Gao</div> <div class="academic-note">Co-advisor: Prof. Jinmyoung Joo, Ulsan National Institute of Science and Technology (UNIST)</div> </div> </div> <div class="academic-item"> <div class="academic-date">2019.09 – 2021.08</div> <div> <div class="academic-title">Postdoctoral Researcher</div> <div class="academic-place">Center for Theragnosis, Biomedical Research Institute, Korea Institute of Science and Technology (KIST)</div> <div class="academic-note">Advisor: Dr. Sehoon Kim</div> </div> </div> </div> <div class="academic-section"> <h2>Education</h2> <div class="academic-item"> <div class="academic-date">2014.03 – 2019.08</div> <div> <div class="academic-title">Ph.D., Chemical Engineering</div> <div class="academic-place">Pohang University of Science and Technology (POSTECH)</div> <div class="academic-note">Advisor: Prof. Shi-Woo Rhee</div> </div> </div> <div class="academic-item"> <div class="academic-date">2010.03 – 2014.02</div> <div> <div class="academic-title">B.S., Chemical Engineering</div> <div class="academic-place">Pohang University of Science and Technology (POSTECH)</div> <div class="academic-note">Magna cum laude</div> </div> </div> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Jounghyun Yoo. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
