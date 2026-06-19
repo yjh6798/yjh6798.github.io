@@ -103,7 +103,7 @@ latest_posts:
 }
 </style>
 
-I am a postdoctoral researcher in the Department of Medical Engineering at the California Institute of Technology, in Prof. Wei Gao's lab.
+I am a postdoctoral researcher in the Department of Medical Engineering at the California Institute of Technology, working in Prof. Wei Gao's lab.
 
 My research focuses on translational nanorobotics and adaptive biofabrication for precision medicine. I engineer micro/nanorobotic and nanomaterial systems that actively interact with complex biological environments to enable targeted sensing, therapeutic delivery, and tissue modulation.
 
