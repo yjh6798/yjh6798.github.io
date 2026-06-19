@@ -7,7 +7,6 @@ nav_order: 4
 ---
 
 <style>
-/* Numbering */
 .publications {
   counter-reset: pubnum;
 }
@@ -27,20 +26,18 @@ nav_order: 4
   padding-left: 0 !important;
 }
 
-/* Publication number */
 .publications ol.bibliography > li::before {
   content: counter(pubnum) ".";
-  flex: 0 0 24px;
-  width: 24px;
+  flex: 0 0 22px;
+  width: 22px;
   text-align: right;
   font-size: 1.05rem;
   font-weight: 500;
   line-height: 1.45;
-  padding-top: 0.10rem;
+  padding-top: 0.03rem;
   color: #222;
 }
 
-/* Main publication block */
 .publications ol.bibliography > li > .row {
   flex: 1;
   margin: 0 !important;
@@ -53,27 +50,23 @@ nav_order: 4
   margin: 0 !important;
 }
 
-/* Title */
 .publications .title {
   margin-top: 0 !important;
-  margin-bottom: 0.15rem !important;
+  margin-bottom: 0.08rem !important;
   line-height: 1.45 !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
 }
 
-/* Authors */
 .publications .author,
 .publications .authors {
   line-height: 1.45 !important;
 }
 
-/* Journal */
 .publications .periodical {
   margin-top: 0.15rem !important;
   line-height: 1.35 !important;
 }
 
-/* DOI button */
 .publications .links {
   margin-top: 0.45rem !important;
 }
@@ -83,7 +76,6 @@ nav_order: 4
   font-size: 0.72rem !important;
 }
 
-/* Year */
 .publications h2 {
   color: #333 !important;
   font-weight: 600 !important;
