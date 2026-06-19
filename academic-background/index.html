@@ -5,67 +5,73 @@
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://jounghyunyoo.com/academic-background/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
   </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Jounghyun</span> Yoo </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">Research </a> </li> <li class="nav-item active"> <a class="nav-link" href="/academic-background/">Academic Background <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Academic Background</h1> <p class="post-description"></p> </header> <article> <style>
-.academic-background {
-  max-width: 900px;
+
+.academic-background{
+  max-width:900px;
 }
 
-.academic-section {
-  margin-top: 2.2rem;
-  margin-bottom: 2.4rem;
+.academic-section{
+  margin-top:2.5rem;
+  margin-bottom:2.8rem;
 }
 
-.academic-section h2 {
-  color: #333 !important;
-  font-weight: 600 !important;
-  font-size: 1.9rem !important;
-  border-bottom: 1px solid #d8d8d8;
-  padding-bottom: 0.35rem;
-  margin-bottom: 1.4rem;
+.academic-section h2{
+  color:#333;
+  font-size:1.85rem;
+  font-weight:600;
+  border-bottom:1px solid #d8d8d8;
+  padding-bottom:.35rem;
+  margin-bottom:1.5rem;
 }
 
-.academic-item {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  column-gap: 1.6rem;
-  margin-bottom: 1.7rem;
+.academic-item{
+  display:grid;
+  grid-template-columns:150px 1fr;
+  column-gap:1.8rem;
+  margin-bottom:2rem;
 }
 
-.academic-date {
-  color: #666;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  padding-top: 0.1rem;
+.academic-date{
+  color:#666;
+  font-size:.95rem;
+  padding-top:.15rem;
+  white-space:nowrap;
 }
 
-.academic-title {
-  font-weight: 600;
-  font-size: 1.05rem;
-  margin-bottom: 0.18rem;
-  color: #111;
+.academic-title{
+  font-size:1.08rem;
+  font-weight:600;
+  color:#111;
+  margin-bottom:.2rem;
 }
 
-.academic-place {
-  line-height: 1.55;
-  color: #222;
+.academic-place{
+  font-size:1rem;
+  color:#222;
+  line-height:1.5;
 }
 
-.academic-note {
-  color: #555;
-  line-height: 1.55;
+.academic-note{
+  color:#666;
+  font-size:.96rem;
+  line-height:1.55;
 }
 
-@media (max-width: 768px) {
-  .academic-item {
-    grid-template-columns: 1fr;
-    row-gap: 0.2rem;
-  }
+@media (max-width:768px){
 
-  .academic-date {
-    font-size: 0.9rem;
-    margin-bottom: 0.1rem;
-  }
+.academic-item{
+  grid-template-columns:1fr;
+  row-gap:.25rem;
 }
-</style> <div class="academic-background"> <div class="academic-section"> <h2>Academic Appointments</h2> <div class="academic-item"> <div class="academic-date">2021.09 – Present</div> <div> <div class="academic-title">Postdoctoral Researcher</div> <div class="academic-place">Department of Medical Engineering, California Institute of Technology</div> <div class="academic-note">Advisor: Prof. Wei Gao</div> <div class="academic-note">Co-advisor: Prof. Jinmyoung Joo, Ulsan National Institute of Science and Technology (UNIST)</div> </div> </div> <div class="academic-item"> <div class="academic-date">2019.09 – 2021.08</div> <div> <div class="academic-title">Postdoctoral Researcher</div> <div class="academic-place">Center for Theragnosis, Biomedical Research Institute, Korea Institute of Science and Technology (KIST)</div> <div class="academic-note">Advisor: Dr. Sehoon Kim</div> </div> </div> </div> <div class="academic-section"> <h2>Education</h2> <div class="academic-item"> <div class="academic-date">2014.03 – 2019.08</div> <div> <div class="academic-title">Ph.D., Chemical Engineering</div> <div class="academic-place">Pohang University of Science and Technology (POSTECH)</div> <div class="academic-note">Advisor: Prof. Shi-Woo Rhee</div> <div class="academic-note">Co-advisor: Prof. Woosung Kwon, Sookmyung Women's University</div> </div> </div> <div class="academic-item"> <div class="academic-date">2010.03 – 2014.02</div> <div> <div class="academic-title">B.S., Chemical Engineering</div> <div class="academic-place">Pohang University of Science and Technology (POSTECH)</div> <div class="academic-note">Magna cum laude</div> </div> </div> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Jounghyun Yoo. </div> </footer> <script>
+
+.academic-date{
+  padding-top:0;
+  margin-bottom:.15rem;
+}
+
+}
+
+</style> <div class="academic-background"> <div class="academic-section"> <h2>Professional Experience</h2> <div class="academic-item"> <div class="academic-date"> 2021.09 – Present </div> <div> <div class="academic-title"> Postdoctoral Researcher </div> <div class="academic-place"> Department of Medical Engineering, California Institute of Technology (Caltech) </div> <div class="academic-note"> Advisor: Prof. Wei Gao </div> <div class="academic-note"> Co-advisor: Prof. Jinmyoung Joo, Ulsan National Institute of Science and Technology (UNIST) </div> </div> </div> <div class="academic-item"> <div class="academic-date"> 2019.09 – 2021.08 </div> <div> <div class="academic-title"> Postdoctoral Researcher </div> <div class="academic-place"> Center for Theragnosis, Biomedical Research Institute, Korea Institute of Science and Technology (KIST) </div> <div class="academic-note"> Advisor: Dr. Sehoon Kim </div> </div> </div> </div> <div class="academic-section"> <h2>Education</h2> <div class="academic-item"> <div class="academic-date"> 2014.03 – 2019.08 </div> <div> <div class="academic-title"> Ph.D., Chemical Engineering </div> <div class="academic-place"> Pohang University of Science and Technology (POSTECH) </div> <div class="academic-note"> Advisor: Prof. Shi-Woo Rhee </div> <div class="academic-note"> Co-advisor: Prof. Woosung Kwon, Sookmyung Women's University </div> </div> </div> <div class="academic-item"> <div class="academic-date"> 2010.03 – 2014.02 </div> <div> <div class="academic-title"> B.S., Chemical Engineering </div> <div class="academic-place"> Pohang University of Science and Technology (POSTECH) </div> <div class="academic-note"> Magna cum laude </div> </div> </div> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Jounghyun Yoo. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
