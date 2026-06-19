@@ -20,7 +20,7 @@ nav_order: 4
   counter-increment: pubnum;
   list-style: none !important;
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
   gap: 0.8rem;
   margin-bottom: 2rem;
   padding-left: 0 !important;
@@ -33,8 +33,8 @@ nav_order: 4
   text-align: right;
   font-size: 1.05rem;
   font-weight: 500;
-  line-height: 1.25;
-  padding-top: 0;
+  line-height: 1.45;
+  padding-top: 0.04rem;
   color: #222;
 }
 
