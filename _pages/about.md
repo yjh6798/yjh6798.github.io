@@ -12,15 +12,11 @@ profile:
   more_info: >
     <div class="profile-caption">
       <div class="profile-title">Postdoctoral Researcher</div>
-
       <div class="profile-dept">
-        <a href="https://mede.caltech.edu/" target="_blank">
-          Department of Medical Engineering
-        </a>
+        <a href="https://mede.caltech.edu/" target="_blank">Department of Medical Engineering</a>
       </div>
-
-      <div>California Institute of Technology</div>
-      <div>Pasadena, California, USA</div>
+      <div class="profile-inst">California Institute of Technology</div>
+      <div class="profile-location">Pasadena, California, USA</div>
     </div>
 
 selected_papers: false
@@ -38,112 +34,73 @@ latest_posts:
 ---
 
 <style>
-
-/* ===========================
-   About paragraphs
-=========================== */
-
-.post p{
-    text-align:justify;
-    line-height:1.72;
+.post p {
+  text-align: justify;
+  line-height: 1.72;
 }
-
-/* ===========================
-   Profile caption
-=========================== */
 
 .profile .more-info,
 .profile .more-info *,
 .profile-caption,
-.profile-caption *{
-
-    font-family:Arial, Helvetica, sans-serif !important;
-
-    font-size:16.5px !important;
-
-    line-height:1.55 !important;
-
-    letter-spacing:0 !important;
-
-    color:#222 !important;
-
-    text-align:left !important;
-
-    font-weight:400 !important;
+.profile-caption * {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 16.2px !important;
+  line-height: 1.52 !important;
+  letter-spacing: 0 !important;
+  color: #222 !important;
+  text-align: left !important;
+  font-weight: 400 !important;
 }
 
-.profile-caption{
-
-    margin-top:1.15rem !important;
-
+.profile-caption {
+  margin-top: 1.1rem !important;
 }
 
-/* Title */
-
-.profile-caption .profile-title{
-
-    font-size:17px !important;
-
-    font-weight:600 !important;
-
-    margin-bottom:0.35rem !important;
-
+.profile-caption .profile-title {
+  font-size: 17px !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.45rem !important;
+  color: #111 !important;
 }
 
-/* Department */
-
-.profile-caption .profile-dept{
-
-    margin-bottom:0.05rem !important;
-
+.profile-caption .profile-dept {
+  margin-bottom: 0.02rem !important;
 }
 
-.profile-caption .profile-dept a{
-
-    color:#b0008e !important;
-
-    text-decoration:none !important;
-
-    font-weight:500 !important;
-
+.profile-caption .profile-dept a {
+  color: #b0008e !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
 }
 
-.profile-caption .profile-dept a:hover{
-
-    text-decoration:underline !important;
-
+.profile-caption .profile-dept a:hover {
+  text-decoration: underline !important;
 }
 
-/* Social icons */
+.profile-caption .profile-inst {
+  margin-top: 0.05rem !important;
+}
+
+.profile-caption .profile-location {
+  margin-top: 0.18rem !important;
+  color: #333 !important;
+}
 
 .social i,
 .social svg,
-.social .ai{
-
-    font-size:1.45rem !important;
-
+.social .ai {
+  font-size: 1.45rem !important;
 }
 
-.social a{
-
-    margin:0 .18rem !important;
-
+.social a {
+  margin: 0 .18rem !important;
 }
 
-/* ===========================
-   Mobile only
-=========================== */
-
-@media (max-width: 768px){
-
-  .profile .more-info{
-
-    margin-bottom:1.5rem !important;
-
+@media (max-width: 768px) {
+  .profile .more-info {
+    margin-bottom: 1.6rem !important;
   }
-
 }
-
 </style>
 
 I am a postdoctoral researcher in the Department of Medical Engineering at the California Institute of Technology, in Prof. Wei Gao's lab.
