@@ -9,11 +9,13 @@ nav_order: 4
 <style>
 .publications {
   counter-reset: pubnum;
+  max-width: none;
 }
 
 .publications ol.bibliography {
   padding-left: 0 !important;
   margin-left: 0 !important;
+  width: 100% !important;
 }
 
 .publications ol.bibliography > li {
@@ -24,6 +26,8 @@ nav_order: 4
   gap: 0.8rem;
   margin-bottom: 2rem;
   padding-left: 0 !important;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .publications ol.bibliography > li::before {
@@ -39,41 +43,49 @@ nav_order: 4
 }
 
 .publications ol.bibliography > li > .row {
-  flex: 1;
+  flex: 1 1 auto;
+  min-width: 0;
   margin: 0 !important;
+  width: 100% !important;
 }
 
 .publications ol.bibliography > li > .row > [class*="col-"] {
   flex: 0 0 100% !important;
   max-width: 100% !important;
+  min-width: 0 !important;
   padding: 0 !important;
   margin: 0 !important;
 }
 
-.publications .title {
+.publications ol.bibliography .title {
   margin-top: 0.07rem !important;
   margin-bottom: 0.08rem !important;
   line-height: 1.45 !important;
   font-weight: 500 !important;
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 
-.publications .author,
-.publications .authors {
+.publications ol.bibliography .author,
+.publications ol.bibliography .authors {
   line-height: 1.45 !important;
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 
-.publications .periodical {
+.publications ol.bibliography .periodical {
   margin-top: 0.15rem !important;
   line-height: 1.35 !important;
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 
 /* DOI / link buttons */
-.publications .links {
+.publications ol.bibliography .links {
   margin-top: 0.38rem !important;
 }
 
-.publications .links .btn,
-.publications .btn {
+.publications ol.bibliography .links .btn {
   padding: 0.08rem 0.42rem !important;
   font-size: 0.62rem !important;
   line-height: 1.15 !important;
@@ -87,8 +99,7 @@ nav_order: 4
   letter-spacing: 0.02em !important;
 }
 
-.publications .links .btn:hover,
-.publications .btn:hover {
+.publications ol.bibliography .links .btn:hover {
   color: #000 !important;
   border-color: #666 !important;
   background: #f7f7f7 !important;
@@ -103,6 +114,18 @@ nav_order: 4
   margin-top: 2rem;
   margin-bottom: 1.2rem;
   text-align: left !important;
+}
+
+@media (max-width: 768px) {
+  .publications ol.bibliography > li {
+    gap: 0.65rem;
+  }
+
+  .publications ol.bibliography > li::before {
+    flex: 0 0 20px;
+    width: 20px;
+    font-size: 1rem;
+  }
 }
 </style>
 
