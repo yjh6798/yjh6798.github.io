@@ -76,4 +76,3 @@ My previous work includes biodegradable silica-based nanoparticles for photoacou
 A central challenge in nanomedicine is that materials with strong in vitro performance often lose efficacy in vivo due to biological barriers, heterogeneous tissue microenvironments, and limited control over delivery. My work addresses this challenge by developing nanomaterials that respond to local biochemical, structural, and physiological cues to improve therapeutic precision and translational potential.
 
 </div>
-```
