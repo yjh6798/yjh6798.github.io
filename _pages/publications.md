@@ -20,13 +20,15 @@ nav_order: 4
   color: #555;
 }
 
-/* Year heading: match Academic Background section heading */
+/* Year heading */
 .publications h2 {
   color: #333 !important;
   font-size: 1.85rem !important;
   font-weight: 600 !important;
   line-height: 1.25 !important;
+  border-top: 1px solid #e0e0e0 !important;
   border-bottom: 1px solid #d8d8d8 !important;
+  padding-top: 1.0rem !important;
   padding-bottom: 0.35rem !important;
   margin-top: 0 !important;
   margin-bottom: 1.5rem !important;
