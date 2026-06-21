@@ -39,6 +39,10 @@ latest_posts:
   line-height: 1.72;
 }
 
+.profile img {
+  border-radius: 6px !important;
+}
+
 .profile .more-info,
 .profile .more-info *,
 .profile-caption,
