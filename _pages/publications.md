@@ -58,7 +58,7 @@ nav_order: 4
 }
 
 .publications ol.bibliography .title {
-  margin-top: 0.07rem !important;
+  margin-top: 0.08rem !important;
   margin-bottom: 0.08rem !important;
   line-height: 1.45 !important;
   font-weight: 500 !important;
