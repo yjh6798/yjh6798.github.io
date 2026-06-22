@@ -179,14 +179,6 @@ nav_order: 4
     if (!pub) return;
 
     const lists = Array.from(pub.querySelectorAll("ol.bibliography"));
-    const allItems = Array.from(pub.querySelectorAll("ol.bibliography > li"));
-
-    let number = allItems.length;
-
-    allItems.forEach(function (item) {
-      item.setAttribute("data-pubnum", number);
-      number -= 1;
-    });
 
     lists.forEach(function (list) {
       list.innerHTML = list.innerHTML
@@ -224,6 +216,15 @@ nav_order: 4
       if (!journal || !details) return;
 
       periodical.innerHTML = "<em>" + journal + "</em>, " + details;
+    });
+
+    /* Final numbering across all years */
+    const allItems = Array.from(pub.querySelectorAll("ol.bibliography li"));
+    let number = allItems.length;
+
+    allItems.forEach(function (item) {
+      item.setAttribute("data-pubnum", number);
+      number -= 1;
     });
 
     pub.classList.add("pub-loaded");
