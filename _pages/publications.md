@@ -15,7 +15,7 @@ nav_order: 4
 /* Contribution note */
 .publication-note {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 1.2rem;
   font-size: 0.92rem;
   color: #555;
 }
@@ -41,18 +41,20 @@ nav_order: 4
   width: 100% !important;
 }
 
+/* Each publication item */
 .publications ol.bibliography > li {
   counter-increment: pubnum;
   list-style: none !important;
-  display: flex;
-  align-items: flex-start;
-  gap: 0.8rem;
-  margin-bottom: 2rem;
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 0.8rem !important;
+  margin-bottom: 2rem !important;
   padding-left: 0 !important;
-  max-width: 100%;
-  min-width: 0;
+  max-width: 100% !important;
+  min-width: 0 !important;
 }
 
+/* Publication number */
 .publications ol.bibliography > li::before {
   content: counter(pubnum) ".";
   flex: 0 0 22px;
@@ -66,9 +68,10 @@ nav_order: 4
   color: #222;
 }
 
+/* Remove default bootstrap-like narrow column layout */
 .publications ol.bibliography > li > .row {
-  flex: 1 1 auto;
-  min-width: 0;
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
   margin: 0 !important;
   width: 100% !important;
 }
@@ -81,42 +84,74 @@ nav_order: 4
   margin: 0 !important;
 }
 
+/* Title */
 .publications ol.bibliography .title {
+  display: block !important;
   margin-top: 0 !important;
   margin-bottom: 0.08rem !important;
   padding-top: 0 !important;
   line-height: 1.45 !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
+  color: #111 !important;
   overflow-wrap: anywhere;
   word-break: normal;
 }
 
+/* Authors */
 .publications ol.bibliography .author,
 .publications ol.bibliography .authors {
+  display: block !important;
   line-height: 1.45 !important;
+  color: #222 !important;
   overflow-wrap: anywhere;
   word-break: normal;
 }
 
-/* Highlight my name subtly */
+/* Highlight my name */
 .publications .my-name {
   color: #8a0078 !important;
   font-weight: 400 !important;
 }
 
+/* Journal / volume / issue / pages / year line */
 .publications ol.bibliography .periodical {
+  display: block !important;
   margin-top: 0.15rem !important;
+  margin-bottom: 0 !important;
   line-height: 1.35 !important;
+  color: #222 !important;
   overflow-wrap: anywhere;
   word-break: normal;
 }
 
-.publications ol.bibliography .periodical em {
+/* Make sure all bibliographic details are visible */
+.publications ol.bibliography .periodical span,
+.publications ol.bibliography .periodical em,
+.publications ol.bibliography .periodical i,
+.publications ol.bibliography .periodical b,
+.publications ol.bibliography .periodical strong {
+  display: inline !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.publications ol.bibliography .periodical em,
+.publications ol.bibliography .periodical i {
   font-style: italic !important;
+}
+
+/* Avoid accidental hiding from theme classes */
+.publications ol.bibliography .abbr,
+.publications ol.bibliography .abstract,
+.publications ol.bibliography .award,
+.publications ol.bibliography .bibtex,
+.publications ol.bibliography .hidden {
+  display: none !important;
 }
 
 /* DOI / link buttons */
 .publications ol.bibliography .links {
+  display: block !important;
   margin-top: 0.38rem !important;
 }
 
@@ -143,15 +178,13 @@ nav_order: 4
 
 @media (max-width: 768px) {
   .publications ol.bibliography > li {
-    gap: 0.65rem;
+    gap: 0.65rem !important;
   }
 
   .publications ol.bibliography > li::before {
     flex: 0 0 20px;
     width: 20px;
     font-size: 1rem;
-    padding-top: 0;
-    margin-top: 0;
   }
 }
 </style>
@@ -170,7 +203,6 @@ nav_order: 4
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  /* Highlight my name */
   const authorBlocks = document.querySelectorAll(
     ".publications ol.bibliography .author, .publications ol.bibliography .authors"
   );
@@ -180,20 +212,6 @@ document.addEventListener("DOMContentLoaded", function () {
       /Jounghyun Yoo([†*])?/g,
       '<span class="my-name">Jounghyun Yoo$1</span>'
     );
-  });
-
-  /* Remove redundant year from journal line while preserving existing italic journal styling */
-  const periodicals = document.querySelectorAll(
-    ".publications ol.bibliography .periodical"
-  );
-
-  periodicals.forEach(function (periodical) {
-    periodical.innerHTML = periodical.innerHTML
-      .replace(/,\s*20\d{2}(?=\s*[\.\)]?\s*$)/g, "")
-      .replace(/\s+20\d{2}(?=\s*[\.\)]?\s*$)/g, "")
-      .replace(/\(\s*20\d{2}\s*\)(?=\s*[\.\)]?\s*$)/g, "")
-      .replace(/,\s*$/g, "")
-      .trim();
   });
 });
 </script>
