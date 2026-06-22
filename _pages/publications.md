@@ -8,7 +8,6 @@ nav_order: 4
 
 <style>
 .publications {
-  counter-reset: pubnum;
   max-width: none;
 }
 
@@ -35,6 +34,7 @@ nav_order: 4
   padding-left: 0 !important;
   margin-left: 0 !important;
   visibility: hidden;
+  counter-reset: pubnum var(--pub-count);
 }
 
 .publications.pub-loaded ol.bibliography {
@@ -42,7 +42,7 @@ nav_order: 4
 }
 
 .publications ol.bibliography > li {
-  counter-increment: pubnum;
+  counter-increment: pubnum -1;
   list-style: none !important;
   display: flex !important;
   align-items: flex-start !important;
@@ -55,8 +55,8 @@ nav_order: 4
 
 .publications ol.bibliography > li::before {
   content: counter(pubnum) ".";
-  flex: 0 0 22px;
-  width: 22px;
+  flex: 0 0 28px;
+  width: 28px;
   text-align: right;
   font-size: 1.05rem;
   font-weight: 500;
@@ -155,8 +155,8 @@ nav_order: 4
   }
 
   .publications ol.bibliography > li::before {
-    flex-basis: 20px;
-    width: 20px;
+    flex-basis: 24px;
+    width: 24px;
     font-size: 1rem;
   }
 }
@@ -183,15 +183,15 @@ nav_order: 4
     const lists = pub.querySelectorAll("ol.bibliography");
 
     lists.forEach(function (list) {
+      const items = list.querySelectorAll(":scope > li");
+      list.style.setProperty("--pub-count", items.length + 1);
+
       list.innerHTML = list.innerHTML
-        /* Remove years from generated bibliography entries */
         .replace(/,\s*(19|20)\d{2}(?=\s*(<|$|\.|,))/g, "")
         .replace(/\s*\(\s*(19|20)\d{2}\s*\)/g, "")
         .replace(/>\s*,\s*(19|20)\d{2}\s*</g, "><")
         .replace(/>\s*,\s*(19|20)\d{2}/g, ">")
         .replace(/\s+(19|20)\d{2}(?=\s*<)/g, "")
-
-        /* Clean punctuation */
         .replace(/,\s*,/g, ",")
         .replace(/,\s*\./g, ".")
         .replace(/,\s*</g, "<")
@@ -213,19 +213,14 @@ nav_order: 4
       }
 
       const parts = rawText.split(",");
-      if (parts.length < 2) {
-        return;
-      }
+      if (parts.length < 2) return;
 
       const journal = parts.shift().trim();
       const details = parts.join(",").trim();
 
-      if (!journal || !details) {
-        return;
-      }
+      if (!journal || !details) return;
 
-      periodical.innerHTML =
-        "<em>" + journal + "</em>, " + details;
+      periodical.innerHTML = "<em>" + journal + "</em>, " + details;
     });
 
     pub.classList.add("pub-loaded");
