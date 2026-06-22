@@ -189,6 +189,29 @@
       );
     });
 
+    pub.querySelectorAll(".periodical").forEach(function (periodical) {
+      const rawText = periodical.textContent.trim();
+
+      if (!rawText || /under revision|in press|featured|cover/i.test(rawText)) {
+        return;
+      }
+
+      const parts = rawText.split(",");
+      if (parts.length < 2) {
+        return;
+      }
+
+      const journal = parts.shift().trim();
+      const details = parts.join(",").trim();
+
+      if (!journal || !details) {
+        return;
+      }
+
+      periodical.innerHTML =
+        "<em>" + journal + "</em>, " + details;
+    });
+
     pub.classList.add("pub-loaded");
   }
 
