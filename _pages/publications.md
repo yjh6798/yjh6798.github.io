@@ -34,7 +34,6 @@ nav_order: 4
   padding-left: 0 !important;
   margin-left: 0 !important;
   visibility: hidden;
-  counter-reset: pubnum var(--pub-count);
 }
 
 .publications.pub-loaded ol.bibliography {
@@ -42,7 +41,6 @@ nav_order: 4
 }
 
 .publications ol.bibliography > li {
-  counter-increment: pubnum -1;
   list-style: none !important;
   display: flex !important;
   align-items: flex-start !important;
@@ -54,7 +52,7 @@ nav_order: 4
 }
 
 .publications ol.bibliography > li::before {
-  content: counter(pubnum) ".";
+  content: attr(data-pubnum) ".";
   flex: 0 0 28px;
   width: 28px;
   text-align: right;
@@ -180,12 +178,17 @@ nav_order: 4
     const pub = document.querySelector(".publications");
     if (!pub) return;
 
-    const lists = pub.querySelectorAll("ol.bibliography");
+    const lists = Array.from(pub.querySelectorAll("ol.bibliography"));
+    const allItems = Array.from(pub.querySelectorAll("ol.bibliography > li"));
+
+    let number = allItems.length;
+
+    allItems.forEach(function (item) {
+      item.setAttribute("data-pubnum", number);
+      number -= 1;
+    });
 
     lists.forEach(function (list) {
-      const items = list.querySelectorAll(":scope > li");
-      list.style.setProperty("--pub-count", items.length + 1);
-
       list.innerHTML = list.innerHTML
         .replace(/,\s*(19|20)\d{2}(?=\s*(<|$|\.|,))/g, "")
         .replace(/\s*\(\s*(19|20)\d{2}\s*\)/g, "")
