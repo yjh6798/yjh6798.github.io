@@ -171,9 +171,6 @@ Pohang University of Science and Technology (POSTECH)
 Advisor: Prof. Shi-Woo Rhee
 </div>
 
-<div class="academic-note">
-Co-advisor: Prof. Woosung Kwon, Sookmyung Women's University
-</div>
 
 </div>
 
