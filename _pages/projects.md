@@ -83,7 +83,7 @@ nav_order: 2
 
 <div class="research-page">
 
-<h1 class="research-overview-title">Research Overview</h1>
+<h1 class="research-overview-title">Research</h1>
 
 <div class="research-intro">
 
