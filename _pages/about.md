@@ -109,12 +109,12 @@ latest_posts:
 
 I am a postdoctoral researcher in the Department of Medical Engineering at the California Institute of Technology, working in Prof. Wei Gao's lab.
 
-My research focuses on translational nanorobotics and adaptive biofabrication for precision medicine. I engineer micro/nanorobotic and nanomaterial systems that actively interact with complex biological environments to enable targeted sensing, therapeutic delivery, and tissue modulation.
+My research focuses on active and intelligent medical systems for precision medicine, with an emphasis on medical micro/nanorobotics, in vivo biofabrication, and nanomedicine. I develop micro/nanorobotic and nanomaterial systems that interact with complex biological environments to improve therapeutic delivery and localized intervention.
 
-My current research aims to develop clinically translatable nanorobots capable of overcoming biological and structural barriers, including the blood–brain barrier, dense extracellular matrices, and other restricted tissue interfaces that limit conventional therapeutic delivery. I am also interested in bioadaptive systems that dynamically respond to local biochemical and mechanical cues to achieve more precise and effective therapies.
+Current work includes medical micro/nanorobots designed to address biological and structural barriers that limit the transport and localization of therapeutics. I am also interested in responsive nanomaterials and biointerfaces that respond to local physiological conditions to improve therapeutic precision.
 
-In parallel, I develop imaging- and AI-guided in vivo biofabrication platforms, including acoustic printing, for the high-resolution patterning of functional biomaterials inside living systems. This work aims to enable minimally invasive construction of therapeutic biointerfaces that can adapt to moving and structurally complex tissues.
+In parallel, I develop imaging-guided in vivo biofabrication approaches, including acoustic printing, for the formation of functional biomaterials within living tissues. This work aims to enable minimally invasive fabrication in complex and dynamic tissue environments.
 
-My long-term goal is to establish adaptive biomedical systems that integrate nanorobotics and intelligent biofabrication to enable targeted therapy, tissue repair, and regenerative medicine.
+My long-term goal is to translate these technologies into practical medical platforms for precise and minimally invasive treatment.
 
 Further details on my research and academic background are available in my [publications](/publications/) and [CV](/assets/pdf/Jounghyun_Yoo_CV.pdf).
