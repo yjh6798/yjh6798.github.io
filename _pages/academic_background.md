@@ -110,7 +110,7 @@ Advisor: Prof. Wei Gao
 </div>
 
 <div class="academic-note">
-Co-advisor: Prof. Jinmyoung Joo, Ulsan National Institute of Science and Technology (UNIST)
+Co-advisor: Prof. Jinmyoung Joo, UNIST
 </div>
 
 </div>
