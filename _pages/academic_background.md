@@ -8,6 +8,10 @@ nav_order: 3
 
 <style>
 
+html{
+  scrollbar-gutter:stable;
+}
+
 .academic-background{
   max-width:none;
   margin:0;
