@@ -20,18 +20,20 @@ nav_order: 2
   line-height: 1.8;
 }
 
+/* Main page title */
 .research-overview-title {
-  color: #333;
-  font-size: 2.2rem;
-  font-weight: 600;
-  line-height: 1.25;
+  color: #111;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
+/* Research overview paragraph */
 .research-intro {
   max-width: 900px;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .research-intro p {
@@ -40,23 +42,26 @@ nav_order: 2
   margin-bottom: 0;
 }
 
+/* Individual research sections */
 .research-section {
-  margin-top: 2.7rem;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2.2rem;
 }
 
+/* Section titles */
 .research-section h2 {
   color: #333;
-  font-size: 1.5rem;
+  font-size: 1.85rem;
   font-weight: 600;
-  line-height: 1.3;
-  border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 0.4rem;
+  line-height: 1.25;
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 0.35rem;
   margin-top: 0;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.2rem;
   max-width: 100%;
 }
 
+/* Body text */
 .research-section p {
   max-width: 900px;
   text-align: justify;
@@ -64,6 +69,7 @@ nav_order: 2
   margin-bottom: 0;
 }
 
+/* Optional images */
 .research-section img {
   width: 100%;
   max-width: 100%;
