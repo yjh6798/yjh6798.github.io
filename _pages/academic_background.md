@@ -112,10 +112,14 @@ California Institute of Technology (Caltech)
 <div class="academic-note">
 Advisor: Prof. Wei Gao
 </div>
-
+<div class="academic-note">
+Co-advisor: Prof. Jinmyoung Joo (UNIST)
 </div>
 
 </div>
+
+</div>
+
 
 <div class="academic-item">
 
