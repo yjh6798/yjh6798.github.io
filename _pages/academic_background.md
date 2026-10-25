@@ -23,10 +23,10 @@ html{
 }
 
 .academic-section h2{
-  color:#333;
+  color:var(--global-text-color);
   font-size:1.85rem;
   font-weight:600;
-  border-bottom:1px solid #d8d8d8;
+  border-bottom:1px solid var(--global-divider-color);
   padding-bottom:.35rem;
   margin-bottom:1.5rem;
   max-width:100%;
@@ -41,7 +41,7 @@ html{
 }
 
 .academic-date{
-  color:#666;
+  color:var(--global-text-color-light);
   font-size:.95rem;
   padding-top:.15rem;
   white-space:nowrap;
@@ -50,18 +50,18 @@ html{
 .academic-title{
   font-size:1.08rem;
   font-weight:600;
-  color:#111;
+  color:var(--global-text-color);
   margin-bottom:.18rem;
 }
 
 .academic-place{
   font-size:1rem;
-  color:#222;
+  color:var(--global-text-color);
   line-height:1.55;
 }
 
 .academic-note{
-  color:#666;
+  color:var(--global-text-color-light);
   font-size:.96rem;
   line-height:1.55;
 }
