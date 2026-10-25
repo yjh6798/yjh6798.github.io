@@ -1,3 +1,4 @@
+```html
 ---
 layout: page
 title: Academic Background
@@ -23,10 +24,10 @@ html{
 }
 
 .academic-section h2{
-  color:var(--global-text-color);
+  color:#333;
   font-size:1.85rem;
   font-weight:600;
-  border-bottom:1px solid var(--global-divider-color);
+  border-bottom:1px solid #d8d8d8;
   padding-bottom:.35rem;
   margin-bottom:1.5rem;
   max-width:100%;
@@ -41,7 +42,7 @@ html{
 }
 
 .academic-date{
-  color:var(--global-text-color-light);
+  color:#666;
   font-size:.95rem;
   padding-top:.15rem;
   white-space:nowrap;
@@ -50,18 +51,18 @@ html{
 .academic-title{
   font-size:1.08rem;
   font-weight:600;
-  color:var(--global-text-color);
+  color:#111;
   margin-bottom:.18rem;
 }
 
 .academic-place{
   font-size:1rem;
-  color:var(--global-text-color);
+  color:#222;
   line-height:1.55;
 }
 
 .academic-note{
-  color:var(--global-text-color-light);
+  color:#666;
   font-size:.96rem;
   line-height:1.55;
 }
@@ -78,6 +79,77 @@ html{
   padding-top:0;
   margin-bottom:.15rem;
 }
+
+}
+
+/* ========================================
+   DARK MODE COMPATIBILITY
+   ======================================== */
+
+/* Section headings */
+html[data-theme="dark"] .academic-section h2,
+body[data-theme="dark"] .academic-section h2,
+html.dark .academic-section h2,
+body.dark .academic-section h2 {
+  color:#f5f5f5 !important;
+  border-bottom-color:#555 !important;
+}
+
+/* Dates */
+html[data-theme="dark"] .academic-date,
+body[data-theme="dark"] .academic-date,
+html.dark .academic-date,
+body.dark .academic-date {
+  color:#bcbcbc !important;
+}
+
+/* Academic titles */
+html[data-theme="dark"] .academic-title,
+body[data-theme="dark"] .academic-title,
+html.dark .academic-title,
+body.dark .academic-title {
+  color:#f5f5f5 !important;
+}
+
+/* Institutions and departments */
+html[data-theme="dark"] .academic-place,
+body[data-theme="dark"] .academic-place,
+html.dark .academic-place,
+body.dark .academic-place {
+  color:#e0e0e0 !important;
+}
+
+/* Advisors and additional notes */
+html[data-theme="dark"] .academic-note,
+body[data-theme="dark"] .academic-note,
+html.dark .academic-note,
+body.dark .academic-note {
+  color:#bcbcbc !important;
+}
+
+/* System dark mode fallback */
+@media (prefers-color-scheme: dark) {
+
+  html:not([data-theme]):not(.light) .academic-section h2 {
+    color:#f5f5f5 !important;
+    border-bottom-color:#555 !important;
+  }
+
+  html:not([data-theme]):not(.light) .academic-date {
+    color:#bcbcbc !important;
+  }
+
+  html:not([data-theme]):not(.light) .academic-title {
+    color:#f5f5f5 !important;
+  }
+
+  html:not([data-theme]):not(.light) .academic-place {
+    color:#e0e0e0 !important;
+  }
+
+  html:not([data-theme]):not(.light) .academic-note {
+    color:#bcbcbc !important;
+  }
 
 }
 
@@ -207,3 +279,4 @@ Magna cum laude
 </div>
 
 </div>
+```
