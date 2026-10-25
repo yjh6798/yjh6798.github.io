@@ -99,10 +99,14 @@ jobs:
           bundle exec jekyll build
       - name: Check generated pages
         run: |
-          echo "=== Academic Background ==="
-          ls -la _site/academic-background/ || true
-          echo "=== Publications ==="
-          ls -la _site/publications/ || true
+          echo "=== Source files ==="
+          ls -la _pages/academic_background.md _pages/publications.md
+
+          echo "=== Generated HTML ==="
+          find _site -type f \( -iname '*academic*' -o -iname '*publication*' \) -print
+
+          echo "=== Jekyll page configuration ==="
+          bundle exec jekyll doctor
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
