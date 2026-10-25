@@ -1,4 +1,4 @@
-```html
+html
 ---
 layout: page
 permalink: /publications/
