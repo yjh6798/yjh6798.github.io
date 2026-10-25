@@ -22,7 +22,7 @@ nav_order: 2
 
 /* Main page title */
 .research-overview-title {
-  color: var(--global-text-color);
+  color: #111;
   font-size: 2.5rem;
   font-weight: 300;
   line-height: 1.2;
@@ -50,11 +50,11 @@ nav_order: 2
 
 /* Section titles */
 .research-section h2 {
-  color: var(--global-text-color);
+  color: #333;
   font-size: 1.85rem;
   font-weight: 600;
   line-height: 1.25;
-  border-bottom: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid #d8d8d8;
   padding-bottom: 0.35rem;
   margin-top: 0;
   margin-bottom: 1.2rem;
@@ -77,6 +77,42 @@ nav_order: 2
   display: block;
   margin: 1.2rem 0 1.4rem 0;
   border-radius: 4px;
+}
+
+/* ========================================
+   DARK MODE COMPATIBILITY
+   ======================================== */
+
+/* Dark mode title colors */
+html[data-theme="dark"] .research-overview-title,
+html[data-theme="dark"] .research-section h2,
+body[data-theme="dark"] .research-overview-title,
+body[data-theme="dark"] .research-section h2,
+html.dark .research-overview-title,
+html.dark .research-section h2,
+body.dark .research-overview-title,
+body.dark .research-section h2 {
+  color: #f5f5f5 !important;
+}
+
+/* Dark mode section borders */
+html[data-theme="dark"] .research-section h2,
+body[data-theme="dark"] .research-section h2,
+html.dark .research-section h2,
+body.dark .research-section h2 {
+  border-bottom-color: #555 !important;
+}
+
+/* Support for system dark mode when no manual theme is set */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]):not(.light) .research-overview-title,
+  html:not([data-theme]):not(.light) .research-section h2 {
+    color: #f5f5f5 !important;
+  }
+
+  html:not([data-theme]):not(.light) .research-section h2 {
+    border-bottom-color: #555 !important;
+  }
 }
 
 </style>
