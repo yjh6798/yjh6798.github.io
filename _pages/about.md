@@ -152,7 +152,7 @@ html[data-theme="dark"] .profile-caption .profile-dept a,
 body[data-theme="dark"] .profile-caption .profile-dept a,
 html.dark .profile-caption .profile-dept a,
 body.dark .profile-caption .profile-dept a {
-  color: #d77ac4 !important;
+  color: #2698BA !important;
 }
 
 /* ========================================
@@ -177,7 +177,7 @@ body.dark .profile-caption .profile-dept a {
   }
 
   html:not([data-theme]):not(.light) .profile-caption .profile-dept a {
-    color: #d77ac4 !important;
+    color: #2698BA !important;
   }
 
 }
