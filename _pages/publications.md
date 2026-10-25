@@ -413,4 +413,3 @@ body.dark .publications ol.bibliography .links .btn:hover {
   }
 })();
 </script>
-```
