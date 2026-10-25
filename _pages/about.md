@@ -43,6 +43,7 @@ latest_posts:
   border-radius: 6px !important;
 }
 
+/* Profile text: automatically adapts to Light/Dark Mode */
 .profile .more-info,
 .profile .more-info *,
 .profile-caption,
@@ -51,7 +52,7 @@ latest_posts:
   font-size: 16.2px !important;
   line-height: 1.52 !important;
   letter-spacing: 0 !important;
-  color: #222 !important;
+  color: var(--global-text-color) !important;
   text-align: left !important;
   font-weight: 400 !important;
 }
@@ -64,13 +65,14 @@ latest_posts:
   font-size: 17px !important;
   font-weight: 600 !important;
   margin-bottom: 0.45rem !important;
-  color: #111 !important;
+  color: var(--global-text-color) !important;
 }
 
 .profile-caption .profile-dept {
   margin-bottom: 0.02rem !important;
 }
 
+/* Department link: preserve existing accent color */
 .profile-caption .profile-dept a {
   color: #b0008e !important;
   text-decoration: none !important;
@@ -87,7 +89,7 @@ latest_posts:
 
 .profile-caption .profile-location {
   margin-top: 0.18rem !important;
-  color: #333 !important;
+  color: var(--global-text-color) !important;
 }
 
 .social i,
