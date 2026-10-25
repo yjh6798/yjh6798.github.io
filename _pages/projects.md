@@ -22,7 +22,7 @@ nav_order: 2
 
 /* Main page title */
 .research-overview-title {
-  color: #111;
+  color: var(--global-text-color);
   font-size: 2.5rem;
   font-weight: 300;
   line-height: 1.2;
@@ -50,11 +50,11 @@ nav_order: 2
 
 /* Section titles */
 .research-section h2 {
-  color: #333;
+  color: var(--global-text-color);
   font-size: 1.85rem;
   font-weight: 600;
   line-height: 1.25;
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: 1px solid var(--global-divider-color);
   padding-bottom: 0.35rem;
   margin-top: 0;
   margin-bottom: 1.2rem;
