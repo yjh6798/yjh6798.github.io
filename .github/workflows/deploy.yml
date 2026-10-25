@@ -97,16 +97,6 @@ jobs:
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
-      - name: Check generated pages
-        run: |
-          echo "=== Source files ==="
-          ls -la _pages/academic_background.md _pages/publications.md
-
-          echo "=== Generated HTML ==="
-          find _site -type f \( -iname '*academic*' -o -iname '*publication*' \) -print
-
-          echo "=== Jekyll page configuration ==="
-          bundle exec jekyll doctor
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
